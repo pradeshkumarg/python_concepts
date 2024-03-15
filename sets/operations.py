@@ -9,8 +9,17 @@ diff2 = set2.difference(set1)
 
 sd = set1.symmetric_difference(set2)
 
-print(set1, set2, union, intersection, diff1, diff2, sd, sep="\n")
+print("Ans: ", set1, set2, union, intersection, diff1, diff2, sd, sep="\n")
 
+union = set1|set2
+intersection = set1&set2
+
+diff1 = set1 - set2
+diff2 = set2 - set1
+
+sd = set1 ^ set2
+
+print("Ans: ", set1, set2, union, intersection, diff1, diff2, sd, sep="\n")
 
 # Update with union
 set1.update(set2)
