@@ -13,7 +13,6 @@ class ElectricEngine:
     def charge():
         print("Charging the electric engine")
 
-
 class HybridCar(Vehicle, ElectricEngine):
     def __init__(self, brand, model):
         Vehicle.__init__(self, brand, model)
