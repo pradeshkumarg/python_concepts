@@ -1,9 +1,5 @@
 import time
 
-"""
-without decorator - time calculation is a side-effect // analogous to an annotation in Java
-"""
-
 
 def cal_square(numbers):
     start = time.time()
@@ -19,11 +15,6 @@ def cal_cube(numbers):
     end = time.time()
     print(f"cal_cube took {(end - start) * 1000} ms")
     return result
-
-
-numbers = range(1, 100000)
-output_square = cal_square(numbers)
-output_cube = cal_cube(numbers)
 
 
 # with decorator
@@ -44,4 +35,12 @@ def cal_power_of_4(nums):
     return result
 
 
-r = cal_power_of_4(numbers)
+if __name__ == "__main__":
+    """
+        without decorator - time calculation is a side-effect // analogous to an annotation in Java
+    """
+    numbers = range(1, 100000)
+    output_square = cal_square(numbers)
+    output_cube = cal_cube(numbers)
+
+    r = cal_power_of_4(numbers)

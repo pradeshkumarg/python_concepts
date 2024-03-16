@@ -1,5 +1,3 @@
-import json
-
 numbers = list(range(1, 8))
 
 print(numbers)
@@ -26,5 +24,3 @@ print(c for c in z)
 
 d = {city: country for city, country in z}
 print(d)
-
-
